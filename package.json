@@ -10,7 +10,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "concurrently \"vite\" \"json-server --watch src/jobs.json --port 8000\"",
+    "start": "vite --host 0.0.0.0 --port $PORT",
     "start:server": "json-server --watch src/jobs.json --port 8000"
   },
   "dependencies": {
